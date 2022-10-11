@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AppMusic</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main glassmorphism">
+        <div class="head_main">
+            <span id = "headmain_title">ĐANG PHÁT</span>
+            <div class="move_to_playlist">
+                <i class="fa-solid fa-bars"></i>
+                <!-- <i class="fa-solid fa-arrow-left-long"></i> -->
+            </div>
+        </div>
+        
+        <!-- Trang main -->
+        <div class="player_music">
+            <div class="image_song">
+                <img src="https://i.scdn.co/image/ab67616d0000b273654d7ee4f655f065fda47eb4" alt="">
+            </div>
+            
+            <div class="title_song">
+                <div class="col_45">
+                    <!-- <marquee behavior="scroll" direction="left" class="marquee none_active_icon" scrolldelay = "7">Nàng Thơ</marquee> -->
+                    <div class="textNameSong">
+                        <p class="">Gặp Lại Nhau khi Mùa Hoa Nở</p>
+                    </div>
+                    <p id="SingerNameSong">Nguyên Hà</p>
+                </div>
+                <div class="col_5 like_song_icon">
+                    <i class="fa-regular fa-heart"></i>
+                    <i class="fa-solid fa-heart none_active_icon main_color_font_1"></i>
+                </div>
+            </div>
+
+            <div class="time_song">
+                <input class="grow_2 timing" id="progress" step="1" value="0" min="0" max="100" type="range">
+                </input>
+                
+                <div class="grow_2 time_number">
+                    <div class="col_2 time_start"><span>00:00</span></div>
+                    <div class="col_2 time_end"><span>00:00</span></div>
+                </div>
+
+            </div>
+
+            <audio src="" id="audio"></audio>
+
+            <div class="control_player">
+                <div class="left_control col_3">
+                    <i class="fa-solid fa-rotate-left"></i>
+                </div>
+
+                <div class="center_control col_3">
+                    <div class="col_3">
+                        <i class="fa-solid fa-backward"></i>
+                    </div>
+                    <div class="col_3" >
+                        <i class="fa-solid fa-play"></i>
+                        <!-- <i class="fa-solid fa-pause display_none"></i> -->
+                    </div>
+                    <div class="col_3">
+                        <i class="fa-solid fa-forward"></i>
+                    </div>
+                </div>
+
+                <div class="right_control col_3">
+                    <i class="fa-solid fa-shuffle"></i>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Trang playlist -->
+        <div class="main_playlist none_active_icon">
+
+        </div>
+
+    </div>
+    <script src="./script/logic.js"></script>
+</body>
+</html>
